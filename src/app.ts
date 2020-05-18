@@ -11,20 +11,20 @@ let testLibrary = new Library(sourceList);
 //testLibrary.selected.consoleLog();
 
 console.log(`Page ${testLibrary.currentPage} of ${testLibrary.numberOfPages}`);
-console.log(`Selected album -- ${testLibrary.selected.artist}: ${testLibrary.selected.name}`);
+console.log(`Selected album -- ${testLibrary.selected.getString()}`);
 console.log("");
-testLibrary.setCurrentPage(29, null);
+testLibrary.setCurrentPage(29);
 console.log(`Page ${testLibrary.currentPage} of ${testLibrary.numberOfPages}`);
-console.log(`Selected album -- ${testLibrary.selected.artist}: ${testLibrary.selected.name}`);
+console.log(`Selected album -- ${testLibrary.selected.getString()}`);
 console.log('');
 testLibrary.setSelectedAlbum(12);
 console.log(`Page ${testLibrary.currentPage} of ${testLibrary.numberOfPages}`);
-console.log(`Selected album -- ${testLibrary.selected.artist}: ${testLibrary.selected.name}`);
+console.log(`Selected album -- ${testLibrary.selected.getString()}`);
 console.log('')
 testLibrary.setSelectedAlbum(49);
 console.log(`Page ${testLibrary.currentPage} of ${testLibrary.numberOfPages}`);
-console.log(`Selected album -- ${testLibrary.selected.artist}: ${testLibrary.selected.name}`);
+console.log(`Selected album -- ${testLibrary.selected.getString()}`);
 console.log('')
 testLibrary.setSelectedAlbum(288);
 console.log(`Page ${testLibrary.currentPage} of ${testLibrary.numberOfPages}`);
-console.log(`Selected album -- ${testLibrary.selected.artist}: ${testLibrary.selected.name}`);
+console.log(`Selected album -- ${testLibrary.selected.getString()}`);

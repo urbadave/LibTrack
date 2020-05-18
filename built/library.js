@@ -26,6 +26,7 @@ var Library = /** @class */ (function () {
         }
     };
     Library.prototype.setCurrentPage = function (pageNumber, index) {
+        if (index === void 0) { index = null; }
         if (pageNumber > this.numberOfPages) {
             this.currentPage = this.numberOfPages;
         }

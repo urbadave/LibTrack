@@ -30,7 +30,7 @@ export class Library{
         }
     }
 
-    setCurrentPage(pageNumber: number, index: number){
+    setCurrentPage(pageNumber: number, index: number = null){
         if(pageNumber > this.numberOfPages){
             this.currentPage = this.numberOfPages;
         } else {

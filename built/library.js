@@ -10,11 +10,10 @@ var Library = /** @class */ (function () {
         this.albumList = [];
         if (list) {
             list.forEach(function (item) { return _this.albumList.push(album_1.Album.loadObj(item)); });
-            if (this.count > 0)
-                this.selected = this.albumList[0];
         }
+        this.sortAlbums();
         this.numberOfPages = Math.round(this.albumList.length / this.currentPageSize);
-        this.currentPage = 1;
+        this.setSelectedAlbum(0);
     }
     Library.prototype.getCurrentPage = function () {
         var initialIndex = (this.currentPage - 1) * this.currentPageSize;
@@ -26,14 +25,17 @@ var Library = /** @class */ (function () {
             return this.albumList.slice(initialIndex);
         }
     };
-    Library.prototype.setCurrentPage = function (pageNumber) {
+    Library.prototype.setCurrentPage = function (pageNumber, index) {
         if (pageNumber > this.numberOfPages) {
             this.currentPage = this.numberOfPages;
         }
         else {
             this.currentPage = pageNumber;
         }
-        this.selected = this.albumList[(this.currentPage - 1) * this.currentPageSize];
+        if (!index)
+            this.selected = this.albumList[(this.currentPage - 1) * this.currentPageSize];
+        else
+            this.selected = this.albumList[index];
     };
     Library.prototype.setPageSize = function (sizeIndex) {
         this.currentPageSize = this.pageSizes[sizeIndex];
@@ -45,6 +47,13 @@ var Library = /** @class */ (function () {
             var index = this.albumIndex(newAlbum);
             this.selected = this.albumList[index];
         }
+    };
+    Library.prototype.findPageForIndex = function (index) {
+        return Math.floor(index / this.currentPageSize + 1);
+    };
+    Library.prototype.setSelectedAlbum = function (index) {
+        var pageOfAlbum = this.findPageForIndex(index);
+        this.setCurrentPage(pageOfAlbum, index);
     };
     Library.prototype.sortAlbums = function () {
         this.albumList.sort(album_1.Album.compare);

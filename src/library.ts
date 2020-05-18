@@ -14,11 +14,10 @@ export class Library{
         this.albumList = [];
         if(list){
             list.forEach(item => this.albumList.push(Album.loadObj(item)));
-            if(this.count > 0)
-                this.selected = this.albumList[0];
         }
+        this.sortAlbums();
         this.numberOfPages = Math.round(this.albumList.length / this.currentPageSize);
-        this.currentPage = 1;
+        this.setSelectedAlbum(0);
     }
 
     getCurrentPage(){
@@ -31,13 +30,16 @@ export class Library{
         }
     }
 
-    setCurrentPage(pageNumber: number){
+    setCurrentPage(pageNumber: number, index: number){
         if(pageNumber > this.numberOfPages){
             this.currentPage = this.numberOfPages;
         } else {
             this.currentPage = pageNumber;
         }
-        this.selected = this.albumList[(this.currentPage - 1) * this.currentPageSize];
+        if(!index)
+            this.selected = this.albumList[(this.currentPage - 1) * this.currentPageSize];
+        else
+            this.selected = this.albumList[index];
     }
 
     setPageSize(sizeIndex: number){
@@ -51,6 +53,15 @@ export class Library{
             const index = this.albumIndex(newAlbum);
             this.selected = this.albumList[index];
         }
+    }
+
+    findPageForIndex(index: number){
+        return Math.floor(index/this.currentPageSize + 1);
+    }
+
+    setSelectedAlbum(index: number){
+        const pageOfAlbum = this.findPageForIndex(index);
+        this.setCurrentPage(pageOfAlbum, index);
     }
 
     sortAlbums(){

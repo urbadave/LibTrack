@@ -1,0 +1,18 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var practiceData_1 = require("./practiceData");
+var album_1 = require("./album");
+var library_1 = require("./library");
+var p1 = practiceData_1.practice[0];
+var sourceList = [];
+practiceData_1.practice.forEach(function (item) { return sourceList.push(album_1.Album.loadJson(JSON.stringify(item))); });
+var testLibrary = new library_1.Library(sourceList);
+testLibrary.sortAlbums();
+testLibrary.selected.consoleLog();
+console.log("Page " + testLibrary.currentPage + " of " + testLibrary.numberOfPages);
+var page = testLibrary.getCurrentPage();
+page.forEach(function (item) { return item.consoleLog(); });
+testLibrary.setCurrentPage(29);
+console.log("Page " + testLibrary.currentPage + " of " + testLibrary.numberOfPages);
+page = testLibrary.getCurrentPage();
+page.forEach(function (item) { return item.consoleLog(); });

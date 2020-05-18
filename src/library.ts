@@ -51,7 +51,30 @@ export class Library{
             this.albumList.push(newAlbum);
             this.sortAlbums();
             const index = this.albumIndex(newAlbum);
-            this.selected = this.albumList[index];
+            this.setSelectedAlbum(index);
+        }
+    }
+
+    editSelectedAlbum(newArtist: string, newName: string){
+        if(this.selected){
+            this.selected.artist = newArtist;
+            this.selected.name = newName;
+            this.sortAlbums();
+            const index = this.albumIndex(this.selected);
+            this.setSelectedAlbum(index);
+        }
+    }
+
+    deleteSelectedAlbum(){
+        if(this.selected){
+            const index = this.albumIndex(this.selected);
+            const newIndex = (index === 0) ? 0 : index-1;
+            this.albumList.splice(index, 1);
+            if(this.albumList.length > 0){
+                this.setSelectedAlbum(newIndex);
+            } else {
+                this.selected = null;
+            }
         }
     }
 

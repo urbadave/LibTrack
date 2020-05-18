@@ -45,7 +45,29 @@ var Library = /** @class */ (function () {
             this.albumList.push(newAlbum);
             this.sortAlbums();
             var index = this.albumIndex(newAlbum);
-            this.selected = this.albumList[index];
+            this.setSelectedAlbum(index);
+        }
+    };
+    Library.prototype.editSelectedAlbum = function (newArtist, newName) {
+        if (this.selected) {
+            this.selected.artist = newArtist;
+            this.selected.name = newName;
+            this.sortAlbums();
+            var index = this.albumIndex(this.selected);
+            this.setSelectedAlbum(index);
+        }
+    };
+    Library.prototype.deleteSelectedAlbum = function () {
+        if (this.selected) {
+            var index = this.albumIndex(this.selected);
+            var newIndex = (index === 0) ? 0 : index - 1;
+            this.albumList.splice(index, 1);
+            if (this.albumList.length > 0) {
+                this.setSelectedAlbum(newIndex);
+            }
+            else {
+                this.selected = null;
+            }
         }
     };
     Library.prototype.findPageForIndex = function (index) {

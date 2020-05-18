@@ -28,3 +28,17 @@ console.log('')
 testLibrary.setSelectedAlbum(288);
 console.log(`Page ${testLibrary.currentPage} of ${testLibrary.numberOfPages}`);
 console.log(`Selected album -- ${testLibrary.selected.getString()}`);
+console.log('');
+const albumToAdd = new Album('Electric Light Orchestra', 'Out Of The Blue');
+testLibrary.addAlbum(albumToAdd);
+console.log(`Page ${testLibrary.currentPage} of ${testLibrary.numberOfPages}`);
+console.log(`Selected album -- ${testLibrary.selected.getString()}`);
+console.log('');
+testLibrary.editSelectedAlbum('The Electric Light Orchestra', 'Out of the Blue');
+console.log(`Page ${testLibrary.currentPage} of ${testLibrary.numberOfPages}`);
+console.log(`Selected album -- ${testLibrary.selected.getString()}`);
+console.log('');
+testLibrary.deleteSelectedAlbum();
+console.log(`Page ${testLibrary.currentPage} of ${testLibrary.numberOfPages}`);
+console.log(`Selected album -- ${testLibrary.selected.getString()}`);
+console.log('');

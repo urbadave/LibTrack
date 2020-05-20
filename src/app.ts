@@ -1,11 +1,13 @@
-import { practice } from "./practiceData";
 import { Album } from "./album";
 import { Library } from "./library";
+import { readFileSync } from 'fs';
 
+const fileData = readFileSync('./practiceData.js').toString();
+//console.log(fileData);
+let albumInfo = JSON.parse(fileData);
 
-let p1 = practice[0];
 let sourceList = [];
-practice.forEach(item => sourceList.push(Album.loadJson(JSON.stringify(item))));
+albumInfo.forEach(item => sourceList.push(Album.loadJson(JSON.stringify(item))));
 
 let testLibrary = new Library(sourceList);
 //testLibrary.selected.consoleLog();

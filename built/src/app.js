@@ -1,11 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var practiceData_1 = require("./practiceData");
 var album_1 = require("./album");
 var library_1 = require("./library");
-var p1 = practiceData_1.practice[0];
+var fs_1 = require("fs");
+var fileData = fs_1.readFileSync('./practiceData.js').toString();
+//console.log(fileData);
+var albumInfo = JSON.parse(fileData);
 var sourceList = [];
-practiceData_1.practice.forEach(function (item) { return sourceList.push(album_1.Album.loadJson(JSON.stringify(item))); });
+albumInfo.forEach(function (item) { return sourceList.push(album_1.Album.loadJson(JSON.stringify(item))); });
 var testLibrary = new library_1.Library(sourceList);
 //testLibrary.selected.consoleLog();
 console.log("Page " + testLibrary.currentPage + " of " + testLibrary.numberOfPages);

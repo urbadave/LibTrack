@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.practice = void 0;
-exports.practice = [{ "artist": "2pac", "name": "All Eyez On Me" },
+[{ "artist": "2pac", "name": "All Eyez On Me" },
     { "artist": "3 Doors Down", "name": "The Greatest Hits" },
     { "artist": "3 Doors Down", "name": "A Better Life" },
     { "artist": "Adele", "name": "21" },

@@ -1,23 +1,25 @@
 export class Album {
     artist: string;
     name: string;
+    year: string;
 
-    constructor(artist: string, name: string){
+    constructor(artist: string, name: string, year?: string){
         this.artist = artist;
         this.name = name;
+        this.year = year;
     }
 
     static loadJson(jsonSource: string){
         if(jsonSource){
             const source = JSON.parse(jsonSource);
-            return new Album(source.artist, source.name);
+            return new Album(source.artist, source.name, source.year);
         }
         return undefined;
     }
 
     static loadObj(objSource: Album){
         if(objSource){
-            return new Album(objSource.artist, objSource.name);
+            return new Album(objSource.artist, objSource.name, objSource.year);
         }
         return undefined;
     }
@@ -41,7 +43,7 @@ export class Album {
     }
 
     getString(){
-        return `${this.artist}: ${this.name}`;
+        return `${this.artist}: ${this.name} ${this.year}`;
     }
 
     consoleLog(){

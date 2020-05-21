@@ -2,20 +2,21 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Album = void 0;
 var Album = /** @class */ (function () {
-    function Album(artist, name) {
+    function Album(artist, name, year) {
         this.artist = artist;
         this.name = name;
+        this.year = year;
     }
     Album.loadJson = function (jsonSource) {
         if (jsonSource) {
             var source = JSON.parse(jsonSource);
-            return new Album(source.artist, source.name);
+            return new Album(source.artist, source.name, source.year);
         }
         return undefined;
     };
     Album.loadObj = function (objSource) {
         if (objSource) {
-            return new Album(objSource.artist, objSource.name);
+            return new Album(objSource.artist, objSource.name, objSource.year);
         }
         return undefined;
     };
@@ -38,7 +39,7 @@ var Album = /** @class */ (function () {
         return 0;
     };
     Album.prototype.getString = function () {
-        return this.artist + ": " + this.name;
+        return this.artist + ": " + this.name + " " + this.year;
     };
     Album.prototype.consoleLog = function () {
         console.log(this.getString());

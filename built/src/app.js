@@ -1,18 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var album_1 = require("./album");
-var library_1 = require("./library");
+var libraryPersist_1 = require("./libraryPersist");
 var fs_1 = require("fs");
 var albumData = fs_1.readFileSync('./albums.txt').toString();
-var albumArray = albumData.split('\r\n');
-var sourceList = [];
-albumArray.forEach(function (item) {
-    var data = item.split('|');
-    sourceList.push(new album_1.Album(data[0], data[1], data[2]));
-});
-// albumInfo.forEach(item => sourceList.push(Album.loadJson(JSON.stringify(item))));
-var testLibrary = new library_1.Library(sourceList);
-//testLibrary.selected.consoleLog();
+var testLibrary = libraryPersist_1.LibraryPersist.libraryFromData(albumData);
 console.log("Page " + testLibrary.currentPage + " of " + testLibrary.numberOfPages);
 console.log("Selected album -- " + testLibrary.selected.getString());
 console.log("");

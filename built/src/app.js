@@ -2,9 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var album_1 = require("./album");
 var libraryPersist_1 = require("./libraryPersist");
-var fs_1 = require("fs");
-var albumData = fs_1.readFileSync('./albums.txt').toString();
-var testLibrary = libraryPersist_1.LibraryPersist.libraryFromData(albumData);
+var testLibrary = libraryPersist_1.LibraryPersist.libraryFromFile('./albums.txt');
 console.log("Page " + testLibrary.currentPage + " of " + testLibrary.numberOfPages);
 console.log("Selected album -- " + testLibrary.selected.getString());
 console.log("");

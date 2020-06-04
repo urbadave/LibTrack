@@ -1,5 +1,6 @@
 import { Album } from "./album";
 import { Library } from "./library";
+import { readFileSync } from 'fs';
 
 export class LibraryPersist{
     fileName: string;
@@ -35,5 +36,12 @@ export class LibraryPersist{
         const albumArray = this.albumArrayFromData(data);
         if(!albumArray) return new Library(new Array<Album>());
         return new Library(albumArray);
+    }
+
+    static libraryFromFile(fileName: string): Library{
+        if(!fileName) return new Library(new Array<Album>());
+        
+        const albumData = readFileSync(fileName).toString();
+        return this.libraryFromData(albumData);
     }
 }

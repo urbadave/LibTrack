@@ -1,11 +1,8 @@
 import { Album } from "./album";
 import { Library } from "./library";
 import { LibraryPersist } from "./libraryPersist";
-import { readFileSync } from 'fs';
 
-const albumData = readFileSync('./albums.txt').toString();
-
-let testLibrary = LibraryPersist.libraryFromData(albumData);
+let testLibrary = LibraryPersist.libraryFromFile('./albums.txt');
 
 
 console.log(`Page ${testLibrary.currentPage} of ${testLibrary.numberOfPages}`);

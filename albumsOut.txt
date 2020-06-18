@@ -8,7 +8,6 @@ Alanis Morissette|Jagged Little Pill|1995
 Alphaville|Forever Young|1984
 Amy Winehouse|Back To Black|2006
 Arcade Fire|Neon Bible|2007
-Audioslave|Audioslave|2002
 Augustana|Augustana|2011
 Augustana|Life Imitating Life|2014
 AWOLNATION|Here Come The Runts|2018
@@ -127,7 +126,6 @@ Lady Gaga|The Fame Monster|2009
 LCD Soundsystem|Sound Of Silver|2007
 LCD Soundsystem|This Is Happening|2010
 Led Zeppelin|IV|1971
-Led Zeppelin|Led Zeppelin III (2014 Remaster)|1970
 Led Zeppelin|Physical Graffiti|1975
 Lifehouse|Almeria|2012
 Lifehouse|Who We Are|2007
@@ -142,6 +140,7 @@ Man Man|On Oni Pond|2013
 Maroon 5|Hands All Over|2011
 Maroon 5|Songs About Jane|2002
 Massive Attack|Blue Lines|2006
+Massive Attack|Mezzanine|1998
 Matisyahu|Spark Seeker|2012
 Meat Loaf|Bat Out Of Hell|1977
 Metric|Fantasies|2009
@@ -162,7 +161,7 @@ Moon Taxi|Let The Record Play|2018
 Morning Parade|Morning Parade|2012
 Mumford & Sons|Babel|2012
 Murs|A Strange Journey Into The Unimaginable|2018
-Muse|Simulation Theory|2018
+Muse|Black Holes And Revelations|2006
 Muse|The Resistance|2009
 Neon Trees|Picture Show|2012
 Neon Trees|Pop Psychology|2014
@@ -173,6 +172,7 @@ Nothing But Thieves|Nothing But Thieves|2015
 Nothing More|The Stories We Tell Ourselves|2017
 Of Monsters And Men|FEVER DREAM|2019
 Of Monsters And Men|My Head Is An Animal|2012
+One Eskimo|One eskimO|2009
 OneRepublic|Dreaming Out Loud|2007
 OneRepublic|Native|2014
 OneRepublic|Waking Up|2009
@@ -223,6 +223,7 @@ Spoon|Ga Ga Ga Ga Ga|2007
 Stick Figure|Set In Stone|2015
 Sting|Brand New Day|1999
 Sting|The Dream Of The Blue Turtles|1985
+Sublime|Sublime|1996
 SuperHeavy|SuperHeavy|2011
 Supertramp|Crime Of The Century|1974
 Sweet|Desolation Boulevard|1974
@@ -243,7 +244,6 @@ The Cranberries|In The End|2019
 The Cure|Kiss Me, Kiss Me, Kiss Me|1987
 The Decemberists|I'll Be Your Girl|2018
 The Decemberists|The King Is Dead|2011
-The Doors|L.A. Woman|1971
 The Fratellis|In Your Own Sweet Time|2018
 The Fray|How To Save A Life|2005
 The Gaslight Anthem|Handwritten|2012
@@ -270,7 +270,6 @@ The Wallflowers|Glad All Over|2012
 The Who|Who's Next|1971
 The xx|The xx|2009
 Tom Petty|Full Moon Fever|1989
-Toto|IV|1982
 twenty one pilots|Blurryface|2015
 Under the Influence of Giants|Under the Influence of Giants|2006
 USS (Ubiquitous Synergy Seeker)|Questamation|2009

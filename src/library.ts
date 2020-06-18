@@ -91,6 +91,49 @@ export class Library{
         this.albumList.sort(Album.compare);
     }
 
+    randomArray(albumListIn:Array<Album>):Array<Album>{
+        let albumList = new Array<Album>();
+        albumListIn.forEach(item => albumList.push(item));
+        let albumListLength = albumList.length;
+        let randomList = new Array<Album>();
+        let index = 0;
+        for(var i = 0; i < albumListLength; i++){
+            if(albumList.length > 1){
+                index = this.getRandomInt(0, albumList.length);
+                randomList.push(albumList[index]);
+                albumList.splice(index, 1);
+            } else {
+                randomList.push(albumList[0]);
+            }
+        }
+        return randomList;
+    }
+
+    getRandomInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
+      }
+
+    prettyData(albumList:Array<Album>){
+        let longestArtist = 0;
+        let longestName = 0;
+
+        albumList.forEach(item => {
+            if(item.artist.length > longestArtist) longestArtist = item.artist.length;
+            if(item.name.length > longestName) longestName = item.name.length;
+        });
+
+        let outputArray = [];
+        albumList.forEach(item => {
+            let artist = item.artist.padEnd(longestArtist, " ");
+            let name = item.name.padEnd(longestName, " ");
+            outputArray.push(`${artist} ${name} ${item.year}`);
+        });
+        let outputString = outputArray.reduce((accumulator, currentValue) => `${accumulator}\r\n${currentValue}`, "");
+        return outputString;
+    }
+
     albumIndex(anAlbum: Album): number{
         if(!this.albumList || this.albumList.length === 0){
             return -1;

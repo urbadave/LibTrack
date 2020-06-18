@@ -80,6 +80,47 @@ var Library = /** @class */ (function () {
     Library.prototype.sortAlbums = function () {
         this.albumList.sort(album_1.Album.compare);
     };
+    Library.prototype.randomArray = function (albumListIn) {
+        var albumList = new Array();
+        albumListIn.forEach(function (item) { return albumList.push(item); });
+        var albumListLength = albumList.length;
+        var randomList = new Array();
+        var index = 0;
+        for (var i = 0; i < albumListLength; i++) {
+            if (albumList.length > 1) {
+                index = this.getRandomInt(0, albumList.length);
+                randomList.push(albumList[index]);
+                albumList.splice(index, 1);
+            }
+            else {
+                randomList.push(albumList[0]);
+            }
+        }
+        return randomList;
+    };
+    Library.prototype.getRandomInt = function (min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
+    };
+    Library.prototype.prettyData = function (albumList) {
+        var longestArtist = 0;
+        var longestName = 0;
+        albumList.forEach(function (item) {
+            if (item.artist.length > longestArtist)
+                longestArtist = item.artist.length;
+            if (item.name.length > longestName)
+                longestName = item.name.length;
+        });
+        var outputArray = [];
+        albumList.forEach(function (item) {
+            var artist = item.artist.padEnd(longestArtist, " ");
+            var name = item.name.padEnd(longestName, " ");
+            outputArray.push(artist + " " + name + " " + item.year);
+        });
+        var outputString = outputArray.reduce(function (accumulator, currentValue) { return accumulator + "\r\n" + currentValue; }, "");
+        return outputString;
+    };
     Library.prototype.albumIndex = function (anAlbum) {
         if (!this.albumList || this.albumList.length === 0) {
             return -1;

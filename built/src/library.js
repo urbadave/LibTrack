@@ -98,6 +98,55 @@ var Library = /** @class */ (function () {
         }
         return randomList;
     };
+    Library.prototype.randomArray2 = function (albumListIn) {
+        var randomList = new Array();
+        albumListIn.forEach(function (a) { return randomList.push(null); });
+        var artistList = this.artistArrays(albumListIn);
+        for (var i = 0; i < artistList.length; i++) {
+            var artistSubList = artistList[i];
+            var indexList = this.indexList(randomList);
+            console.log(indexList.length);
+            var subSize = Math.floor(indexList.length / artistSubList.length);
+            var base = 0;
+            var max = subSize;
+            for (var j = 0; j < artistSubList.length; j++) {
+                var randomIndex = indexList[this.getRandomInt(base, max)];
+                console.log(randomIndex);
+                randomList[randomIndex] = artistSubList[j];
+                base = base + subSize;
+                max = max + subSize;
+            }
+        }
+        return randomList;
+    };
+    Library.prototype.indexList = function (albumListIn) {
+        var retVal = new Array();
+        for (var i = 0; i < albumListIn.length; i++) {
+            if (albumListIn[i] === null)
+                retVal.push(i);
+        }
+        return retVal;
+    };
+    Library.prototype.artistArrays = function (albumListIn) {
+        var artistArrays = new Array();
+        var sortedIn = albumListIn.sort(album_1.Album.compare);
+        var currentArtist = sortedIn[0].artist;
+        var currentArray = new Array();
+        for (var i = 0; i < sortedIn.length; i++) {
+            if (sortedIn[i].artist === currentArtist) {
+                currentArray.push(sortedIn[i]);
+            }
+            else {
+                artistArrays.push(currentArray);
+                currentArray = new Array();
+                currentArtist = sortedIn[i].artist;
+                currentArray.push(sortedIn[i]);
+            }
+        }
+        artistArrays.push(currentArray);
+        artistArrays.sort(album_1.Album.compareArray);
+        return artistArrays;
+    };
     Library.prototype.getRandomInt = function (min, max) {
         min = Math.ceil(min);
         max = Math.floor(max);

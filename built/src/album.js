@@ -38,6 +38,15 @@ var Album = /** @class */ (function () {
             return one.name.localeCompare(other.name);
         return 0;
     };
+    Album.compareArray = function (one, other) {
+        if (!one && !other)
+            return 0;
+        if (!one)
+            return 1;
+        if (!other)
+            return -1;
+        return other.length - one.length;
+    };
     Album.prototype.getString = function () {
         return this.artist + ": " + this.name + " " + this.year;
     };

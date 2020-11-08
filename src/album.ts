@@ -42,6 +42,14 @@ export class Album {
         return 0;
     }
 
+    static compareArray(one: Array<Album>, other: Array<Album>){
+        if(!one && !other) return 0;
+        if(!one) return 1;
+        if(!other) return -1;
+
+        return other.length - one.length;
+    }
+
     getString(){
         return `${this.artist}: ${this.name} ${this.year}`;
     }

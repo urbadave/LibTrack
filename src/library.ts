@@ -109,6 +109,65 @@ export class Library{
         return randomList;
     }
 
+    randomArray2(albumListIn:Array<Album>):Array<Album>{
+        let randomList = new Array<Album>();
+
+        albumListIn.forEach(a => randomList.push(null));
+
+        let artistList = this.artistArrays(albumListIn);
+        for(var i = 0; i < artistList.length; i++){
+            let artistSubList = artistList[i];
+            let indexList = this.indexList(randomList);
+            console.log(indexList.length);
+            let subSize = Math.floor(indexList.length/artistSubList.length);
+            let base = 0;
+            let max = subSize;            
+            for(var j = 0; j < artistSubList.length; j++){
+                let randomIndex = indexList[this.getRandomInt(base, max)];
+                console.log(randomIndex);
+                randomList[randomIndex] = artistSubList[j];
+                base = base + subSize;
+                max = max + subSize;
+            }
+        }
+
+        return randomList;
+    }
+
+    indexList(albumListIn:Array<Album>):Array<number>{
+        let retVal = new Array<number>();
+        
+        for(var i = 0; i < albumListIn.length; i++){
+            if(albumListIn[i] === null)
+                retVal.push(i);
+        }
+        
+        return retVal;
+    }
+
+    artistArrays(albumListIn:Array<Album>):Array<Array<Album>>{
+        let artistArrays = new Array<Array<Album>>();
+
+        let sortedIn = albumListIn.sort(Album.compare);
+        let currentArtist = sortedIn[0].artist;
+        let currentArray = new Array<Album>();
+
+        for(var i = 0; i < sortedIn.length; i++){
+            if(sortedIn[i].artist === currentArtist){
+                currentArray.push(sortedIn[i]);
+            } else {
+                artistArrays.push(currentArray);
+                currentArray = new Array<Album>();
+                currentArtist = sortedIn[i].artist;
+                currentArray.push(sortedIn[i]);
+            }
+        }
+        artistArrays.push(currentArray);
+        artistArrays.sort(Album.compareArray);
+
+        return artistArrays;
+    }
+
     getRandomInt(min, max) {
         min = Math.ceil(min);
         max = Math.floor(max);

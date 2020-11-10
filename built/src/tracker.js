@@ -73,3 +73,4 @@ module.exports = /** @class */ (function () {
 // trackerObj.removeEncounter(enc3);
 // trackerObj.printAll();
 // console.log(JSON.stringify(trackerObj));
+//# sourceMappingURL=tracker.js.map

@@ -287,3 +287,4 @@
     { "artist": "Sting", "name": "Brand New Day" },
     { "artist": "Michael Jackson", "name": "Thriller" },
     { "artist": "Milky Chance", "name": "Sadnecessary" }];
+//# sourceMappingURL=practiceData.js.map

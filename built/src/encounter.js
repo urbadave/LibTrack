@@ -64,3 +64,4 @@ module.exports = /** @class */ (function () {
     };
     return Encounter;
 }());
+//# sourceMappingURL=encounter.js.map

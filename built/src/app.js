@@ -15,3 +15,4 @@ console.log(randomList.length);
 var prettyData = testLibrary.prettyData(randomList);
 fs_1.writeFileSync('./albumsPretty.txt', prettyData);
 console.log(result);
+//# sourceMappingURL=app.js.map

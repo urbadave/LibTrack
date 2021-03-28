@@ -118,13 +118,13 @@ export class Library{
         for(var i = 0; i < artistList.length; i++){
             let artistSubList = artistList[i];
             let indexList = this.indexList(randomList);
-            console.log(indexList.length);
+            //console.log(indexList.length);
             let subSize = Math.floor(indexList.length/artistSubList.length);
             let base = 0;
             let max = subSize;            
             for(var j = 0; j < artistSubList.length; j++){
                 let randomIndex = indexList[this.getRandomInt(base, max)];
-                console.log(randomIndex);
+                //console.log(randomIndex);
                 randomList[randomIndex] = artistSubList[j];
                 base = base + subSize;
                 max = max + subSize;

@@ -2,10 +2,10 @@
 2pac|All Eyez On Me|1996
 3 Doors Down|The Greatest Hits|2012
 Adele|21|2011
+Air Traffic Controller|NORDO|2012
 Alanis Morissette|Jagged Little Pill|1995
 Alphaville|Forever Young|1984
 Amy Winehouse|Back To Black|2006
-Artist|Album|year
 Augustana|Augustana|2011
 Augustana|Life Imitating Life|2014
 AWOLNATION|Here Come The Runts|2018
@@ -17,10 +17,9 @@ Bastille|Bad Blood|2013
 Bebe|Un Pokito De Rocanrol|2012
 Bebe|Y.|2009
 Beck|Odelay|1996
-Benjamin Gibbard|Former Lives|2013
 Berlin|Love Life|1984
 Berlin|Pleassure Victim|1982
-Big L|Lifestylz ov da Poor & Dangerous |1995
+Big Head Todd and the Monsters|Beautiful World|1997
 Billy Joel|52nd Street|1979
 Billy Joel|The Stranger|1977
 Blitzen Trapper|VII|2013
@@ -33,13 +32,15 @@ Blue Oyster Cult|Spectres|1977
 Blues Traveller|Four|1994
 Bob Dylan|Blood On The Tracks|1975
 Bob Dylan|Highway 61 Revisited|1965
-Bob Seger and the Silver Bullet Band|Against the Wind|1980
-Bob Seger and the Silver Bullet Band|Stranger In Town|1978
+Bob Seger|Against the Wind|1980
+Bob Seger|Stranger In Town|1978
 Bonde do Rolê|Tropicalbacanal|2013
 Bonde do Rolê|With Lasers|2007
 Boston|Boston|1976
+Boston|Boston|1976
 Brandi Carlile|Bear Creek|2012
 Brandi Carlile|By the Way, I Forgive You|2018
+Bring Me The Horizon|amo|2019
 Broken Bells|Broken Bells|2010
 Bruce Springsteen|Born In The U.S.A.|1984
 Bruce Springsteen|Darkness On The Edge Of Town|1978
@@ -55,8 +56,9 @@ Citizen Cope|Every Waking Moment|2006
 Citizen Cope|The Clarence Greenwood Recordings|2004
 Civil Twilight|Civil Twilight|2010
 Civil Twilight|Holy Weather|2012
+Cloud Cult|Love|2013
 Coast Modern|Coast Modern|2017
-Dave Mathews Band|Crash|1996
+Daft Punk|Discovery|2001
 Death Cab For Cutie|Codes And Keys|2011
 Death Cab For Cutie|Narrow Stairs|2008
 Death Cab For Cutie|Plans|2005
@@ -80,20 +82,17 @@ Evanescence|Evanescence|2011
 Evanescence|Fallen|2003
 Everclear|Invisible Stars|2012
 Everclear|So Much For The Afterglow|1997
-Ex Cops|Daggers|2015
 Fall Out Boy|American Beauty/American Psycho|2015
 Fall Out Boy|From Under The Cork Tree|2005
 Fall Out Boy|M A N I A|2018
 Falling In Reverse|Coming Home|2017
 Falling In Reverse|The Drug In Me is You|2011
+Family of the Year|Loma Vista|2012
 Ferdinand the Bull|Painting Over Pictures|2018
 Fine Young Cannibals|The Raw and the Cooked|1989
 Fitz And The Tantrums|More Than Just A Dream|2013
-Fitz And The Tantrums|Pickin' Up The Pieces|2010
 Foals|Everything Not Saved Will Be Lost Part 1|2019
-Foals|Total Life Forever|2010
 Foo Fighters|One by One|2002
-Foo Fighters|The Colour And The Shape|1997
 Foreigner|Double Vision|1978
 Fort Minor|The Rising Tied|2005
 Foster The People|Torches|2011
@@ -106,13 +105,14 @@ Gorillaz|Demon Days|2005
 Gossip|A Joyful Noise|2009
 Gossip|Music For Men|2012
 Gotye|Making Mirrors|2011
+Graffiti6|Colours|2010
 Green Day|¡DOS!|2012
 Green Day|¡TRÉ!|2012
 Green Day|¡UNO!|2012
 Green Day|American Idiot|2004
 GRiZ|Good Will Prevail|2016
 GRiZ|Ride Waves|2019
-Guns N Roses|Appetite For Destruction|1987
+Guns N' Roses|Appetite For Destruction|1987
 Highly Suspect|MCID|2019
 I Fight Dragons|Kaboom!|2011
 IAMDYNAMITE|Supermegafantastic|2012
@@ -120,14 +120,12 @@ Imagine Dragons|Night Visions|2012
 Imagine Dragons|Smoke + Mirrors|2014
 Incubus|S.C.I.E.N.C.E.|1997
 Indigo Girls|Rites of Passage|1992
-Ingird Michaelson|Be OK|2008
 Ingird Michaelson|Lights Out|2014
 INXS|Kick|1987
 Israel Kamakawiwo'ole|Facing Future|1993
 Jet|Get Born|2003
 Joe Jackson|Look Sharp!|1979
-Joe Jackson|Night And Day|1982
-Jonsi|Go|2010
+Jónsi|Go|2010
 Journey|Greatest Hits|2006
 Julian Casablancas|Phrazes For The Young|2009
 Kansas|Point Of Know Return|1977
@@ -135,7 +133,6 @@ Kasabian|Velociraptor!|2011
 Kasabian|West Ryder Pauper Lunatic Asylum|2009
 Kate Bush|Hounds of Love|1985
 KT Tunstall|Eye To The Telescope|2006
-KT Tunstall|KIN|2016
 KT Tunstall|Tiger Suit|2010
 Lady Gaga|The Fame Monster|2009
 LCD Soundsystem|Sound Of Silver|2007
@@ -143,21 +140,17 @@ LCD Soundsystem|This Is Happening|2010
 Led Zeppelin|IV|1971
 Led Zeppelin|Physical Graffiti|1975
 Lifehouse|Almeria|2012
-Lifehouse|No Name Face|2000
 Lifehouse|Who We Are|2007
 Linkin Park|Hybrid Theory|2000
 Linkin Park|Meteora|2003
 Live|Throwing Copper|1994
 Logic|Confessions Of A Dangerous Mind|2019
-Logic|Under Pressure|2014
-Lorde|Melodrama|2017
 Lorde|Pure Heroine|2013
 Lupe Fiasco|Lupe Fiasco's Food And Liquor|2006
 Lupe Fiasco|Lupe Fiasco's The Cool|2007
 M83|Hurry Up, We're Dreaming|2011
 Macklemore & Ryan Lewis|The Heist|2012
 Man Man|On Oni Pond|2013
-Man Man|Six Demon Bag|2006
 Marcy Playground|Marcy Playground|1997
 Maroon 5|Hands All Over|2011
 Maroon 5|Songs About Jane|2002
@@ -180,16 +173,12 @@ Milky Chance|Sadnecessary|2014
 Minus the Bear|Omni|2010
 Minus the Bear|Planet Of Ice|2007
 MisterWives|Connect The Dots|2017
-MisterWives|Our Own House|2015
-Modest Mouse|Good News for People Who Love Bad News|2004
-Modest Mouse|The Moon & Antarctica|2000
 Moon Taxi|Cabaret|2012
 Moon Taxi|Let The Record Play|2018
 Morning Parade|Morning Parade|2012
 Mumford & Sons|Babel|2012
 Murs|A Strange Journey Into The Unimaginable|2018
 Murs|Murs 3:16: The 9th Edition|2004
-Muse|The Resistance|2009
 Neon Trees|Picture Show|2012
 Neon Trees|Pop Psychology|2014
 Nirvana|Nevermind|1991
@@ -198,7 +187,6 @@ Noel Gallagher's High Flying Birds|Who Built The Moon?|2017
 Nothing But Thieves|Nothing But Thieves|2015
 Nothing More|Nothing More|2014
 Nothing More|The Stories We Tell Ourselves|2017
-Of Monsters And Men|FEVER DREAM|2019
 Of Monsters And Men|My Head Is An Animal|2012
 One Eskimo|One eskimO|2009
 OneRepublic|Dreaming Out Loud|2007
@@ -224,7 +212,6 @@ Peter Gabriel|So|1986
 Pink Floyd|Dark Side Of The Moon|1973
 Pink Floyd|The Wall|1979
 Plain White T's|All That We Needed|2005
-Plain White T's|Every Second Counts|2006
 Plan B|Heaven Before All Hell Breaks Loose|2018
 Plan B|The Defamation Of Strickland Banks|2010
 Portishead|Dummy|1994
@@ -239,7 +226,6 @@ Queens Of The Stone Age|Villains|2017
 Red Hot Chili Peppers|Blood Sugar Sex Magik|1991
 Red Hot Chili Peppers|Californication|1999
 Red Hot Chili Peppers|Stadium Arcadium|2006
-Rodrigo Y Gabriela|Rodrigo Y Gabriela|2017
 Ryan Bingham|Junky Star|2010
 Ryan Bingham|Mescalito|2007
 Santana|Abraxas|1970
@@ -253,7 +239,6 @@ Shinedown|The Sound Of Madness|2008
 Shiny Toy Guns|Season Of Poison|2008
 Shiny Toy Guns|We Are Pilots|2006
 Shovels & Rope|O Be Joyful|2012
-Shovels & Rope|Swimmin Time|2015
 Sia|1000 Forms of Fear|2015
 Silversun Pickups|Carnavas|2006
 Silversun Pickups|Neck Of The Woods|2012
@@ -266,17 +251,14 @@ Stick Figure|Burial Ground|2012
 Stick Figure|Set In Stone|2015
 Sting|The Dream Of The Blue Turtles|1985
 Sublime|Sublime|1996
-SuperHeavy|SuperHeavy|2011
 Supertramp|Crime Of The Century|1974
 Sweet|Desolation Boulevard|1974
 Switchfoot|Hello Hurricane|2009
 Switchfoot|The Beautiful Letdown|2003
-SYML|SYML|2019
 Tears For Fears|Songs From The Big Chair|1985
 Tears For Fears|Sowing The Seeds Of Love|1989
 The 1975|The 1975|2013
 The Airborne Toxic Event|Dope Machines|2015
-The Airborne Toxic Event|The Airborne Toxic Event|2008
 The All-American Rejects|Move Along|2005
 The B-52s|The B-52s|1979
 The Black Keys|Brothers|2010
@@ -307,9 +289,10 @@ The Naked And Famous|Passive Me, Aggressive You|2010
 The Offspring|Days Go By|2012
 The Offspring|Smash|1994
 The Pains Of Being Pure At Heart|Days Of Abandon|2014
-The Pains Of Being Pure At Heart|The Pains Of Being Pure At Heart|2009
 The Postal Service|Give Up|2003
 The Raconteurs|Consolers Of The Lonely|2008
+The Revivalists|City of Sound|2014
+The Revivalists|Men Among Mountains|2015
 The Sheepdogs|Changing Colours|2018
 The Sheepdogs|Learn And Burn|2010
 The Sheepdogs|The Sheepdogs|2012
@@ -318,7 +301,6 @@ The Shins|Heartworms|2017
 The Shins|Port Of Morrow|2012
 The Shins|Wincing The Night Away|2007
 The Smashing Pumpkins|Oceania|2012
-The Smashing Pumpkins|Siamese Dream|1993
 The Sounds|Dying To Say This To You|2006
 The Wallflowers|Bringing Down The Horse|1996
 The Wallflowers|Glad All Over|2012
@@ -344,13 +326,12 @@ Welshly Arms|No Place Is Home|2018
 White Lies|To Lose My Life ...|2009
 Wild Belle|Dreamland|2016
 Wild Belle|Isles|2013
+Wintersleep|Welcome to the Night Sky|2007
 Wisin|Victory|2017
 Wisin Y Yandel|Líderes|2012
-Wisin Y Yandel|Los Reyes del Nuevo Milenio|2000
 Yaz|Upstairs At Eric's|1982
 Yeasayer|Odd Blood|2010
 Young the Giant|Home Of The Strange|2016
 Young the Giant|Mind Over Matter|2014
 Young the Giant|Mirror Master|2018
 ZZ Top|Eliminator|1983
-ZZ Top|Tres Hombres|1973
